@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mökille.fi</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id = 'top'>
+            <h1>Mökille</h1>
+            <nav>
+                <button id = "home" onclick ="window.location.href = 'index.html';">
+                    <img src="media/home_icon.png" alt = "Mökki-ikoni">
+                </button>
+                <button id = "toMap" onclick ="window.location.href = 'mapPage.html';">
+                    <img src="media/map_icon.png" alt = "Karttaikoni">
+                </button>
+                <button id ="packing" onclick ="window.location.href = 'itemCheckPage.html';">
+                    <img src="media/pack_icon.png" alt = "Pakkausikoni">
+                </button>
+                <button id ="list" onclick ="window.location.href = 'jobCheckPage.html';">
+                    <img src="media/job_icon.png" alt = "Työikoni">
+                </button>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <section>
+                    <h2 id = "midHeader">Mökille.fi pähkinänkuoressa</h2>
+                    <figure id = "intro">
+                        <video controls>
+                            <source src = "media/webvideo.mp4" type="video/mp4">
+                        </video>
+                        <figcaption>
+                            Mökille.fi on täysin ilmainen palvelu, josta löydät kaiken tarvitsemasi mökkimatkojesi suunnitteluun.
+                            Suunnittele optimaallinen reitti.
+                            Selvitä sää matkan aikana.
+                            Kirjoita muistiin, mitä tarvitset mukaasi ja mitä mökillä pitää tehdä.<br>
+                        </figcaption>
+                    </figure>
+                    <figure id = "cabin">
+                        <img src = "media/webcabin.jpg" alt = "Kuva: Mökki ja Suomen lippu">
+                        <figcaption>
+                            Palvelumme avulla et enää koskaan unohda jotain pakatessasi, etkä tule Suomen sään yllättämäksi tai aja harhaan. Mökille päästyäsi seuraa itsellesi asettamiasi töitä ja pidä niistä kirjaa tehokkaan ajankäytön saavuttamiseksi. Tehokkuus töissä jättää sinulle enemmän ansaittua vapaa-aikaa, joten suunnittele täydellinen mökkimatkasi sivuillamme. Turvallista ja hauskaa mökkeilyä!
+                        </figcaption>
+                    </figure>
+                </section>
+                <section id = "passHeader" class = "visible">
+                    <header id = "pswrd">
+                        <h3 id = "instruction">Anna salasana nähdäksesi lisää</h3>
+                        <figure>
+                            <input id = "passField" type = "password" name = "Password" placeholder = "Syötä salasana">
+                            <button id = "enter">Avaa</button>
+                        </figure>
+                    </header>
+                </section>
+                <section id = "staff" class = "hidden">
+                    <div>
+                        <header id = "info">
+                            <h3>Tietoa meistä</h3>
+                            <figure class ="closeButton">
+                                <button id="close"><strong>X</strong></button>
+                            </figure>
+                        </header>
+                        <figure class = "headshot">
+                            <img src = "media/Onni.jpg" alt = "Kuva: Onni Alasaari">
+                            <h4>
+                                Onni on hyvä videopeleissä
+                                <br>-Onni Alasaari
+                            </h4>
+                        </figure>
+                        <figure class = "headshot">
+                            <img src = "media/EliasViro.jpg" alt ="Kuva: Elias Viro">
+                            <h4>
+                                Vaikeaa keksiä tähän mitään järkevää sanottavaa.
+                                <br>-Elias Viro
+                            </h4>
+                        </figure>
+                        <figure class = "headshot">
+                            <img src = "media/Miiko.jpg" alt = "Kuva: Miiko Majewski">
+                            <h4>
+                                Never spend 6 minutes doing something by hand when you can spend 6 hours failing to automate it
+                                <br>-Miiko Majewski
+                            </h4>
+                        </figure>
+                        <figure class = "headshot">
+                            <img src = "media/tapio.jpg" alt = "Kuva: Tapio Humaljoki">
+                            <h4>
+                                Never stop the madness tänään vedetää taas<br>
+                                -Tapio Humaljoki
+                            </h4>
+                        </figure>
+                    </div>
+                </section>
+                <section id = "process" class = "hidden">
+                    <div>
+                        <header>
+                            <h3>Taustatyö</h3>
+                            <figure class = "closeButton">
+                                <button id="close2"><strong>X</strong></button>
+                            </figure>
+                        </header>
+                        <figure>
+                            <h4>Videon puhe</h4>
+                            <audio controls>
+                                <source src="media/webpageaudio.mp3" type = "audio/mp3">
+                            </audio>
+                        </figure>
+                        <figure>
+                            <h4>Videon taustatyö</h4>
+                            <img src ="media/kuvakasis.jpg" alt="Kuvakäsikirjoitus">
+                            <figcaption>
+                                <strong>Videon tavoite:</strong> Tavoite on mainostaa mökille.fi sivua.<br>
+                                <strong>Kohderyhmä:</strong> Mökkeilyä harrastavat.<br>
+                                <strong>Ratkaistu ongelma:</strong> Mökkeilyyn lähtemisen suunnittelun helpottaminen.
+                            </figcaption>
+                        </figure>
+                        <figure id="bottom">
+                            <h4>Alkuperäinen mökkikuva</h4>
+                            <img src ="media/cabinOriginal.jpg" alt ="Kuva: Alkuperäinen mökkikuva">
+                        </figure>
+                    </div>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <h3>Linkit ja maininnat</h3>
+            <figure>
+                <figcaption>Ikonit:</figcaption>
+                <ul>
+                    <li><a href="https://www.flaticon.com/free-icon/home_1237698">https://www.flaticon.com/free-icon/home_1237698</a></li>
+                    <li><a href="https://www.flaticon.com/free-icon/document_1237693">https://www.flaticon.com/free-icon/document_1237693</a></li>
+                    <li><a href="https://www.flaticon.com/free-icon/check-mark_1237686">https://www.flaticon.com/free-icon/check-mark_1237686</a></li>
+                    <li><a href="https://www.flaticon.com/free-icon/location-pin_1237707">https://www.flaticon.com/free-icon/location-pin_1237707</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <figcaption>Videon taustamusiikki:</figcaption>
+                <ul>
+                    <li><a href = https://www.bensound.com/royalty-free-music/track/happiness>https://www.bensound.com/royalty-free-music/track/happiness</a></li>
+                </ul>
+            </figure>
+        </footer>
+        <script src = "js/index.js"></script>
+    </body>
+
+</html>

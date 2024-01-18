@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mökille.fi</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@700&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header id = 'top'>
+            <h1>Mökille</h1>
+            <nav>
+                <button id = "home" onclick ="window.location.href = 'index.html';">
+                    <img src="media/home_icon.png" alt = "Mökki-ikoni">
+                </button>
+                <button id = "toMap" onclick ="window.location.href = 'mapPage.html';">
+                    <img src="media/map_icon.png" alt = "Karttaikoni">
+                </button>
+                <button id ="packing" onclick ="window.location.href = 'itemCheckPage.html';">
+                    <img src="media/pack_icon.png" alt = "Pakkausikoni">
+                </button>
+                <button id ="list" onclick ="window.location.href = 'jobCheckPage.html';">
+                    <img src="media/job_icon.png" alt = "Työikoni">
+                </button>
+            </nav>
+        </header>
+        <main>
+            <article id="flexList">
+                <h2>Lista mökillä hoidettavista töistä</h2>
+                <section id="cart">
+                    <h3 id="cartHeader">Valitse töitä</h3>
+                    <ul id="hardList">
+                    <!--
+                    `<li>
+                        <div id="userInputElement">
+                            <div id ="hardListName">
+                                ${hardArray[i].name}
+                            <div>
+                            <div id="hardListControls">
+                                <button id="add">+</button>
+                            </div>
+                        </div>
+                    </li>`
+                    -->
+                    </ul>
+                </section>
+                <section id="checkList">
+                    <h3 id="ownHeader">Valitut työt</h3>
+                    <ul id="customList">
+                        <!-- Added list elements
+                            <li>
+                                <div id="userInputItem">
+                                    <div id="listText">
+                                        TYÖN NIMI
+                                    </div>
+                                    <div id="listButtons">
+                                        <button id="listControl"> V </button>
+                                        <button id="listControl"> X </button>
+                                    </div>
+                                </div>
+                            </li>
+                        -->
+                    </ul>
+                    <button id="clearListButton">Tyhjennä lista</button>
+                </section>
+            </article>
+        </main>
+        <footer>
+            <h3>Linkit ja maininnat</h3>
+            <figure>
+                <figcaption>Ikonit:</figcaption>
+                <ul>
+                    <li><a href="https://www.flaticon.com/free-icon/home_1237698">https://www.flaticon.com/free-icon/home_1237698</a></li>
+                    <li><a href="https://www.flaticon.com/free-icon/document_1237693">https://www.flaticon.com/free-icon/document_1237693</a></li>
+                    <li><a href="https://www.flaticon.com/free-icon/check-mark_1237686">https://www.flaticon.com/free-icon/check-mark_1237686</a></li>
+                    <li><a href="https://www.flaticon.com/free-icon/location-pin_1237707">https://www.flaticon.com/free-icon/location-pin_1237707</a></li>
+                </ul>
+            </figure>
+            <figure>
+                <figcaption>Videon taustamusiikki:</figcaption>
+                <ul>
+                    <li><a href = https://www.bensound.com/royalty-free-music/track/happiness>https://www.bensound.com/royalty-free-music/track/happiness</a></li>
+                </ul>
+            </figure>
+        </footer>
+        <script src="js/jobCheckLisk.js"></script>
+    </body>
+</html>
